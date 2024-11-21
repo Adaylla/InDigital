@@ -15,9 +15,10 @@
     <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
 </head>
 <body>
+    <!-- navegação -->
     <nav>
         <div class="logo">
-            <a href="index.html">InDigital</a>
+            <a href="{% url 'index' %}">InDigital</a>
         </div> 
     <ul>
         <li> <a href="#">Home</a> </li>
@@ -33,7 +34,7 @@
     <style>
         .banner {
             height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.281)),url("{% static 'assets/img/lab.png' %}");
+            background: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.281)),url("{% static 'assets/img/capa.jpg' %}");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -42,5 +43,27 @@
             justify-content: center;
         }
     </style>
+    <!-- sobre o InDigital -->
+    <section class="sobre">
+        <div class="container">
+            <div class="sobre-text">
+                <h3>Sobre o InDigital</h3>
+                <p>
+                    O InDigital é um software educacional 
+                    com o objetivo de facilitar para os 
+                    estudantes a utilização de computadores 
+                    dentro do IFRN.
+                </p>
+            </div> 
+            <div class="sobre-img">
+                <img src="{% static 'assets/img/subcapa.jpg' %}" alt="">
+            </div>
+        </div> 
+    </section>
+        <footer class="footer">
+            <div class="container">
+                <p>Copyright © 2024</p>
+            </div>
+        </footer>
 </body>
 </html>
