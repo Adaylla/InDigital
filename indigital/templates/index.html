@@ -1,25 +1,36 @@
-{% extends 'base.html' %}
-{% load static %} 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        InDigital
+    </title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="{% static 'assets/favicon.ico' %}" />
+    <!-- css -->
+    <link href="style.css" rel="stylesheet" />
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<body>
+<header>
+    <a href="#" class="logo">InDigital</a>
 
-{% block content %}
-<section class="banner">
-    <div class="texto">
-        <h1 class="titulo">Bem vindo(a) ao InDigital!</h1>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Reserva</a>
+    </nav>
+    <div class="icon">
+        <a href="#" class="fas fa-user"></a>
     </div>
+
+</header>
+<section class="home" id="home">
+    <div class="content">
+        <h3>Bem vindo(a) ao InDigital!</h3>
+    </div> 
 </section>
-<style>
-    .banner {
-        height: 100vh;
-        background: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.281)),url("{% static 'assets/img/capa.jpg' %}");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-</style>
-<!-- sobre o InDigital -->
 <section class="sobre">
     <div class="container">
         <div class="sobre-text">
@@ -32,8 +43,14 @@
             </p>
         </div> 
         <div class="sobre-img">
-            <img src="{% static 'assets/img/indigitallogotipo.png' %}" alt="">
+            <img src="img/indigitallogotipo.png" alt="">
         </div>
     </div> 
 </section>
-{% endblock content %}
+<footer class="footer">
+    <div class="container">
+        <p>Copyright © 2024</p>
+    </div>
+</footer>
+</body>
+</html>
