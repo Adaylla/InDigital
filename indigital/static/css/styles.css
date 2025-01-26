@@ -229,3 +229,66 @@ input:focus {
     font-size: 10px;
     color: #0D5355;
 }
+
+/* esqueceu a senha */
+.reset-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 2rem; /* Espaço geral */
+    margin-top: 10rem; /* Distância do cabeçalho */
+}
+
+.reset-card {
+    max-width: 400px; /* Largura máxima para centralizar */
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    background-color: #55B0B4;
+    border-radius: 25px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reset-card label {
+    font-size: 2rem;
+}
+
+.reset-card h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.reset-card p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.reset-card input {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    background-color: transparent;
+    color: black;
+    font-size: 1.6rem;
+}
+
+.reset-card button {
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+    color: #55b0b4;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reset-card .success-icon {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
