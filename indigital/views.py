@@ -17,3 +17,6 @@ def cadastro(request):
 
 def perfil(request):
     return render(request, "perfil.html")
+
+def confirmacaodasenha(request):
+    return render(request, "confirmacaodasenha.html")
